@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"oApproachController","path":"objects/oApproachController/oApproachController.yy",},"order":0,},
     {"id":{"name":"snd_50725_tiles_02","path":"sounds/snd_50725_tiles_02/snd_50725_tiles_02.yy",},"order":16,},
     {"id":{"name":"spr_hand_icon","path":"sprites/spr_hand_icon/spr_hand_icon.yy",},"order":22,},
     {"id":{"name":"spr_click_mask08","path":"sprites/spr_click_mask08/spr_click_mask08.yy",},"order":9,},
@@ -71,7 +72,7 @@
     {"id":{"name":"spr_feet_icon","path":"sprites/spr_feet_icon/spr_feet_icon.yy",},"order":20,},
     {"id":{"name":"spr_leaving13","path":"sprites/spr_leaving13/spr_leaving13.yy",},"order":27,},
     {"id":{"name":"spr_photo03","path":"sprites/spr_photo03/spr_photo03.yy",},"order":33,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"rmApproach","path":"rooms/rmApproach/rmApproach.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Android","path":"options/android/options_android.yy",},
@@ -92,7 +93,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rmApproach","path":"rooms/rmApproach/rmApproach.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
