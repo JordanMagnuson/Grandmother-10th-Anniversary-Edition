@@ -66,6 +66,7 @@
     {"id":{"name":"spr_photo06","path":"sprites/spr_photo06/spr_photo06.yy",},"order":36,},
     {"id":{"name":"scr_Globals","path":"scripts/scr_Globals/scr_Globals.yy",},"order":0,},
     {"id":{"name":"spr_click_mask13","path":"sprites/spr_click_mask13/spr_click_mask13.yy",},"order":14,},
+    {"id":{"name":"oMouseController","path":"objects/oMouseController/oMouseController.yy",},"order":1,},
     {"id":{"name":"spr_photo02","path":"sprites/spr_photo02/spr_photo02.yy",},"order":32,},
     {"id":{"name":"spr_magnifying_glass_icon","path":"sprites/spr_magnifying_glass_icon/spr_magnifying_glass_icon.yy",},"order":30,},
     {"id":{"name":"spr_click_mask03","path":"sprites/spr_click_mask03/spr_click_mask03.yy",},"order":4,},
