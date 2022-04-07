@@ -64,7 +64,7 @@
     {"id":{"name":"spr_photo12","path":"sprites/spr_photo12/spr_photo12.yy",},"order":42,},
     {"id":{"name":"spr_sponge_color","path":"sprites/spr_sponge_color/spr_sponge_color.yy",},"order":48,},
     {"id":{"name":"spr_bucket_front","path":"sprites/spr_bucket_front/spr_bucket_front.yy",},"order":1,},
-    {"id":{"name":"Approach","path":"objects/Approach/Approach.yy",},"order":7,},
+    {"id":{"name":"oApproach","path":"objects/oApproach/oApproach.yy",},"order":7,},
     {"id":{"name":"spr_dust","path":"sprites/spr_dust/spr_dust.yy",},"order":19,},
     {"id":{"name":"snd_55690_walking_05","path":"sounds/snd_55690_walking_05/snd_55690_walking_05.yy",},"order":8,},
     {"id":{"name":"spr_headstone","path":"sprites/spr_headstone/spr_headstone.yy",},"order":23,},
