@@ -1,0 +1,1 @@
+if(instance_exists(self.clickMask)) instance_destroy(self.clickMask);
