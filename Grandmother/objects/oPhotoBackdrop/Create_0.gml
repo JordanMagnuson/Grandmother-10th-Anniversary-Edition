@@ -20,7 +20,7 @@ function PhotoBackdrop(_backdropSource = noone, _soundSource = noone, _fadeInDur
 	if(noone != _soundSource) self.sound = _soundSource;
 	self.sprite_index = _backdropSource;
 	self.fadeInDuration = _fadeInDuration * room_speed;
-	self.fadeOutDuration = _fadeOutDuration * -room_speed;
+	self.fadeOutDuration = _fadeOutDuration * room_speed;
 	//Set in instance_create_depth() function
 	//self.depth = 100; 
 }
@@ -31,8 +31,8 @@ function added() {
 	if(self.fadeInDuration > 0) {
 		self.image_alpha = 0;
 		self.testTween = instance_create_depth(0,0,0,oLinearNumberTween);
-		self.testTween.LinearNumberTween(self.id, "image_alpha", 1, self.fadeInDuration, true);
-		//self.fadeIn();
+		self.testTween.LinearNumberTween(self.id, "image_alpha", 1, self.fadeInDuration, method(self.id, self.fadeInCallback));
+		self.fadeIn();
 	}
 	else {
 		self.image_alpha = 1;
@@ -41,17 +41,21 @@ function added() {
 
 function fadeIn() {
 	if(noone != self.sound) self.curSound = audio_play_sound_on(self.soundEmitter, self.sound, false, 0);
-	self.fadeTween = self.fadeInDuration;
+	self.testTween.start();
+	//self.fadeTween = self.fadeInDuration;
 }
 
 //Put this in the update tween?
 function fadeInCallback() {
 	self.fadeInComplete = true;
+	self.fadeOut();
 }
 
 function fadeOut() {
 	if(self.fadeOutDuration > 0) {
-		self.fadeTween = self.fadeOutDuration;
+		//self.fadeTween = self.fadeOutDuration;
+		self.testTween = instance_create_depth(0,0,0,oLinearNumberTween);
+		self.testTween.LinearNumberTween(self.id, "image_alpha", 0, self.fadeOutDuration, noone, true);
 	}
 	else {
 		instance_destroy(self.id);	

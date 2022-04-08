@@ -2,7 +2,9 @@
 
 if(noone != self.sprite_index) {
 
-	
+	//if(noone != self.testTween && !instance_exists(self.testTween)) {
+		//self.fadeInCallback();
+	//}
 
 /*
 	if(self.fadeTween-- > 0) {
