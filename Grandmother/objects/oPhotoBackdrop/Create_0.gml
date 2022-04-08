@@ -10,6 +10,8 @@ fadeOutDuration = 0;
 fadeInComplete = false;
 fadeTween = 0; //Fading ColorTween -> wait for number tween function?
 
+testTween = noone;
+
 function PhotoBackdrop(_backdropSource = noone, _soundSource = noone, _fadeInDuration = 3, _fadeOutDuration = 3, _clickMaskSource = noone) {
 	//Assigned as sprite index later
 	//self.backdrop = _backdropSource;
@@ -28,20 +30,18 @@ function added() {
 	//if (clickMask) FP.world.add(clickMask);
 	if(self.fadeInDuration > 0) {
 		self.image_alpha = 0;
-		self.fadeIn();
+		self.testTween = instance_create_depth(0,0,0,oLinearNumberTween);
+		self.testTween.LinearNumberTween(self.id, "image_alpha", 1, self.fadeInDuration, true);
+		//self.fadeIn();
 	}
 	else {
 		self.image_alpha = 1;
-		//Unneeded?
-		//fadeTween = new ColorTween;
-		//fadeTween.alpha = 1;
 	}
 }
 
 function fadeIn() {
 	if(noone != self.sound) self.curSound = audio_play_sound_on(self.soundEmitter, self.sound, false, 0);
 	self.fadeTween = self.fadeInDuration;
-	//fade from 0 -> 1 using fadeInDuration in a tween fashion
 }
 
 //Put this in the update tween?
@@ -51,7 +51,6 @@ function fadeInCallback() {
 
 function fadeOut() {
 	if(self.fadeOutDuration > 0) {
-		//fade from current alpha -> 0 using fadeOutDuration in a tween fashion	
 		self.fadeTween = self.fadeOutDuration;
 	}
 	else {
