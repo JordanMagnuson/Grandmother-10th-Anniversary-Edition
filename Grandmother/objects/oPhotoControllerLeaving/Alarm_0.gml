@@ -1,0 +1,2 @@
+/// @description nextPhoto
+self.nextPhoto();
