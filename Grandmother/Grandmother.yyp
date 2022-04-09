@@ -35,6 +35,7 @@
     {"id":{"name":"spr_photo10","path":"sprites/spr_photo10/spr_photo10.yy",},"order":40,},
     {"id":{"name":"spr_leaving04","path":"sprites/spr_leaving04/spr_leaving04.yy",},"order":25,},
     {"id":{"name":"spr_bucket","path":"sprites/spr_bucket/spr_bucket.yy",},"order":0,},
+    {"id":{"name":"oGameController","path":"objects/oGameController/oGameController.yy",},"order":9,},
     {"id":{"name":"snd_21065_bucket_enter","path":"sounds/snd_21065_bucket_enter/snd_21065_bucket_enter.yy",},"order":10,},
     {"id":{"name":"spr_photo01","path":"sprites/spr_photo01/spr_photo01.yy",},"order":31,},
     {"id":{"name":"snd_55690_walking_02","path":"sounds/snd_55690_walking_02/snd_55690_walking_02.yy",},"order":5,},
@@ -51,6 +52,7 @@
     {"id":{"name":"spr_click_mask04","path":"sprites/spr_click_mask04/spr_click_mask04.yy",},"order":5,},
     {"id":{"name":"snd_17383_ambient_01","path":"sounds/snd_17383_ambient_01/snd_17383_ambient_01.yy",},"order":0,},
     {"id":{"name":"snd_55690_walking_01","path":"sounds/snd_55690_walking_01/snd_55690_walking_01.yy",},"order":4,},
+    {"id":{"name":"rmGame","path":"rooms/rmGame/rmGame.yy",},"order":1,},
     {"id":{"name":"oLinearNumberTween","path":"objects/oLinearNumberTween/oLinearNumberTween.yy",},"order":8,},
     {"id":{"name":"spr_click_mask06","path":"sprites/spr_click_mask06/spr_click_mask06.yy",},"order":7,},
     {"id":{"name":"spr_click_mask01","path":"sprites/spr_click_mask01/spr_click_mask01.yy",},"order":2,},
@@ -102,6 +104,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"rmApproach","path":"rooms/rmApproach/rmApproach.yy",},},
+    {"roomId":{"name":"rmGame","path":"rooms/rmGame/rmGame.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
