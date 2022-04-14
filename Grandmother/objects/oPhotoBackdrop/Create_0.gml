@@ -49,10 +49,15 @@ function fadeInCallback() {
 function fadeOut() {
 	if(self.fadeOutDuration > 0) {
 		self.fadeTween = instance_create_depth(0, 0, 0, oNumTween);
-		self.fadeTween.NumTween(self.id);
+		self.fadeTween.NumTween(self.id, true, method(self.id, destroy));
 		self.fadeTween.tween("image_alpha", 0, self.fadeOutDuration);
 	}
 	else {
 		instance_destroy(self.id);	
 	}
+}
+
+function destroy() {
+	if(instance_exists(self.clickMask)) instance_destroy(self.clickMask);
+	instance_destroy(self.id);
 }
