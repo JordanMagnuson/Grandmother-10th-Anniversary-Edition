@@ -5,6 +5,7 @@ global.clickMaskArray = [global.CLICK_MASK_01, global.CLICK_MASK_02, global.CLIC
 //function begin(){
 	global.photoController = instance_create_depth(0, 0, 0, oPhotoController);
 	global.photoController.PhotoController(global.photoArray, global.soundArray, global.clickMaskArray);
+	global.photoController.added();
 	audio_play_sound(snd_17383_ambient_01,1,true);
 	global.mouseController = instance_create_depth(0, 0, 0, oMouseControllerApproach);
 	//global.mouseController.added();
