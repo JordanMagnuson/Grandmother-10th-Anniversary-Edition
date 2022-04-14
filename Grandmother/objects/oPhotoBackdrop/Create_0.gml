@@ -44,14 +44,13 @@ function fadeIn() {
 
 function fadeInCallback() {
 	self.fadeInComplete = true;
-	self.fadeOut();
 }
 
 function fadeOut() {
 	if(self.fadeOutDuration > 0) {
 		self.fadeTween = instance_create_depth(0, 0, 0, oNumTween);
 		self.fadeTween.NumTween(self.id);
-		self.fadeTween.tween("image_alpha", 0, self.fadeOutDuration, method(undefined, bounceOut));
+		self.fadeTween.tween("image_alpha", 0, self.fadeOutDuration);
 	}
 	else {
 		instance_destroy(self.id);	

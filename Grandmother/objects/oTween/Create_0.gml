@@ -1,9 +1,9 @@
 tweenActive = false;
 callbackFunction = noone;
 easeFunction = noone;
-timeScale = 0.0;
-framesElapsed = 0.0;
-targetTime = 0.0;
+timeScale = 0;
+framesElapsed = 0;
+targetTime = 0;
 tweenFinish = false;
 
 destroyOnFinish = false;
@@ -16,8 +16,8 @@ function Tween(_duration, _destroyOnFinish = true, _callback = noone, _ease = no
 }
 
 function start() {
-	self.framesElapsed = 0.0;
-	if(self.targetTime == 0.0) {
+	self.framesElapsed = 0;
+	if(self.targetTime == 0) {
 		self.tweenActive = false;
 		return;
 	}

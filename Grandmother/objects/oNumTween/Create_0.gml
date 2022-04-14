@@ -1,8 +1,8 @@
 // Inherit the parent event
 event_inherited();
 
-startVal = 0.0;
-range = 0.0;
+startVal = 0;
+range = 0;
 
 objId = noone;
 varName = "";
