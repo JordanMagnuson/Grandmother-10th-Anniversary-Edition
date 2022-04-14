@@ -39,7 +39,7 @@ function added() {
 
 function fadeIn() {
 	if(noone != self.sound) self.curSound = audio_play_sound_on(self.soundEmitter, self.sound, false, 0);
-	self.fadeTween.tween("image_alpha", 1, self.fadeInDuration, method(undefined, bounceIn));
+	self.fadeTween.tween("image_alpha", 1, self.fadeInDuration);
 }
 
 function fadeInCallback() {

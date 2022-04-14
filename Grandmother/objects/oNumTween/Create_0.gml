@@ -1,8 +1,8 @@
 // Inherit the parent event
 event_inherited();
 
-startVal = 0;
-range = 0;
+startVal = 0.0;
+range = 0.0;
 
 objId = noone;
 varName = "";
@@ -21,7 +21,7 @@ function NumTween(_id, _destroyOnFinish = true, _callback = noone) {
 	self.objId = _id;
 	self.targetTime = 0;
 	self.callbackFunction = _callback;
-	self.destroyOnFinish = _destroyOnFinish;
+	self.destroyOnFinish = _destroyOnFinish; 
 }
 
 /*
