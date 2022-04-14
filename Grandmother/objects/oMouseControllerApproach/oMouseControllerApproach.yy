@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_cursor_icon",
-    "path": "sprites/spr_cursor_icon/spr_cursor_icon.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
