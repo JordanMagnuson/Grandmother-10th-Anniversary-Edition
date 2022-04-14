@@ -83,6 +83,7 @@
     {"id":{"name":"spr_magnifying_glass_icon","path":"sprites/spr_magnifying_glass_icon/spr_magnifying_glass_icon.yy",},"order":30,},
     {"id":{"name":"spr_click_mask03","path":"sprites/spr_click_mask03/spr_click_mask03.yy",},"order":4,},
     {"id":{"name":"spr_feet_icon","path":"sprites/spr_feet_icon/spr_feet_icon.yy",},"order":20,},
+    {"id":{"name":"oLinearMotion","path":"objects/oLinearMotion/oLinearMotion.yy",},"order":14,},
     {"id":{"name":"spr_leaving13","path":"sprites/spr_leaving13/spr_leaving13.yy",},"order":27,},
     {"id":{"name":"spr_photo03","path":"sprites/spr_photo03/spr_photo03.yy",},"order":33,},
     {"id":{"name":"rmApproach","path":"rooms/rmApproach/rmApproach.yy",},"order":0,},
