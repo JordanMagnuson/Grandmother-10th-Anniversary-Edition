@@ -6,6 +6,7 @@
     {"id":{"name":"spr_click_mask08","path":"sprites/spr_click_mask08/spr_click_mask08.yy",},"order":9,},
     {"id":{"name":"spr_photo04","path":"sprites/spr_photo04/spr_photo04.yy",},"order":34,},
     {"id":{"name":"spr_photo07","path":"sprites/spr_photo07/spr_photo07.yy",},"order":37,},
+    {"id":{"name":"oFlowers","path":"objects/oFlowers/oFlowers.yy",},"order":16,},
     {"id":{"name":"spr_photo11","path":"sprites/spr_photo11/spr_photo11.yy",},"order":41,},
     {"id":{"name":"spr_photo14","path":"sprites/spr_photo14/spr_photo14.yy",},"order":44,},
     {"id":{"name":"snd_50725_tiles_05","path":"sounds/snd_50725_tiles_05/snd_50725_tiles_05.yy",},"order":2,},
