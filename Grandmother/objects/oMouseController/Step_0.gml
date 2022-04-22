@@ -6,7 +6,7 @@ if(mouse_check_button(mb_left))
 else
 	lastPressCounter += (delta_time / 1000000)
 	
-show_debug_message("last mouse press: " + lastPressCounter);
+show_debug_message("last mouse press: " + string(lastPressCounter));
 
 x = mouse_x;
 y = mouse_y;
