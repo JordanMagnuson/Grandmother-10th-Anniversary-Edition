@@ -31,7 +31,7 @@
     "path": "folders/Objects/FlashPunk.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oLinearMotion",
+  "name": "oColorTween",
   "tags": [],
   "resourceType": "GMObject",
 }

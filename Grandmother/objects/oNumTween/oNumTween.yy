@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "FlashPunk",
+    "path": "folders/Objects/FlashPunk.yy",
   },
   "resourceVersion": "1.0",
   "name": "oNumTween",
