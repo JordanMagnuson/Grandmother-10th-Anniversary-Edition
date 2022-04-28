@@ -1,11 +1,11 @@
 {
-  "spriteId": {
+  "spriteId": null,
+  "solid": false,
+  "visible": true,
+  "spriteMaskId": {
     "name": "spr_bucket",
     "path": "sprites/spr_bucket/spr_bucket.yy",
   },
-  "solid": false,
-  "visible": true,
-  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
@@ -22,6 +22,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

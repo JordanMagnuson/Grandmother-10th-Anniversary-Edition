@@ -16,6 +16,7 @@ function added(){
 	audio_play_sound(snd_33207_roses,1,false);
 	if (shouldFadeIn)
 		fadeIn(fadeInDuration);
+	image_alpha = 1; // this line is for now untill we get the fade in done
 }
 
 function fadeIn(_duration = 3){

@@ -11,38 +11,38 @@ show_debug_message("last mouse press: " + string(lastPressCounter));
 x = mouse_x;
 y = mouse_y;
 
-//var overlapBucket:Bucket = collide('bucket', x, y) as Bucket;
-//			var overlapVase:Vase = collide('vase', x, y) as Vase;
-//			
-//			if (overlapVase && !Global.vase.filled)
-//			{
-//				Global.sponge.visible = false;
-//				graphic = handIcon;
-//				visible = true;				
-//				//Mouse.hide();
-//			}
-//			else if (Global.hasSponge)
-//			{
-//				Global.sponge.visible = true;
-//				visible = false;
-//				//Mouse.hide();
-//			}
-//			else if (overlapBucket)
-//			{
-//				Global.sponge.visible = false;
-//				graphic = handIcon;
-//				visible = true;
-//				//Mouse.hide();
-//				
-//				if (Input.mousePressed && !Global.hasSponge)
-//				{
-//					Global.hasSponge = true;
-//				}
-//			}			
-//			else
-//			{
-//				Global.sponge.visible = false;
-//				graphic = cursorIcon;
-//				visible = true;				
-//				//Mouse.hide();
-//			}
+var overlapVase = collision_circle(x, y, 2, oVase, 0, 1);
+var overlapBucket = collision_circle(x, y, 2, oBucket, 0, 1);
+
+			if (overlapVase && !global.vase.filled && mouse_check_button(mb_left))
+			{
+				global.vase.fill();
+			}
+			else if (overlapVase && !global.vase.filled)
+			{
+				global.sponge.image_alpha = 0;
+				sprite_index = spr_hand_icon;
+				image_alpha = 1;
+			}
+			
+			else if (global.hasSponge)
+			{
+				global.sponge.image_alpha = 1;
+				image_alpha = 0;
+			}
+			else if (overlapBucket)
+			{
+				global.sponge.image_alpha = 0;
+				sprite_index = spr_hand_icon;
+				image_alpha = 1;				
+				if (mouse_check_button(mb_left) && !global.hasSponge)
+				{
+					global.hasSponge = true;
+				}
+			}			
+			else
+			{
+				global.sponge.image_alpha = 0;
+				sprite_index = spr_cursor_icon;
+				image_alpha = 1;				
+			}
