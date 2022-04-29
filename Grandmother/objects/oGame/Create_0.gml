@@ -6,8 +6,8 @@ global.mouseController = instance_create_depth(0, 0, 0, oMouseController);
 //global.dust.added();
 global.vase = instance_create_depth(482, 339, 0, oVase);
 //******Below is waiting for oBucket to be implemented
-global.bucket = instance_create_depth(16, room_height, 0, oBucket);
-global.bucket.Bucket(0,0);
+global.bucket = instance_create_depth(0, 0, 0, oBucket);
+global.bucket.Bucket();
 global.bucket.added();
 
 //******Below is waiting for oSponge to be implemented

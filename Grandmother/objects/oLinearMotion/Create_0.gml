@@ -7,8 +7,11 @@ moveX = 0;
 moveY = 0;
 dist = -1;
 
-function LinearMotion(_destroyOnFinish = true, _callback = noone) {
+objId = noone;
+
+function LinearMotion(_id, _destroyOnFinish = true, _callback = noone) {
 	
+	self.objId = _id;
 	self.targetTime = 0;
 	self.callbackFunction = _callback;
 	self.destroyOnFinish = _destroyOnFinish;
