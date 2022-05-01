@@ -10,7 +10,7 @@ function Whiteboard(_source, _eraser) {
 
 function erase(_px = 0, _py = 0, _spx = 0, _spy = 0, _alphaMultiplier = 1) {
 	
-	var newAlpha = global.dustAlpha[_py][_px] - global.SPONGE_ALPHA[_spy][_spx] * _alphaMultiplier;
+	var newAlpha = global.dustAlpha[_py][_px] - 0.25 * global.SPONGE_ALPHA[_spy][_spx] * _alphaMultiplier;
 	
 	global.dustAlpha[_py][_px] = newAlpha < 0 ? 0 : newAlpha;
 	
