@@ -8,8 +8,8 @@ else
 x = mouse_x;
 y = mouse_y;
 
-var overlapVase = collision_rectangle(x, y, x + sprite_get_width(sprite_index), y + sprite_get_height(sprite_index), oVase, 0, 1);
-var overlapBucket = collision_rectangle(x, y, x + sprite_get_width(sprite_index), y + sprite_get_height(sprite_index), oBucket, 0, 1);
+var overlapVase = collision_point(self.x, self.y, oVase, false, true);
+var overlapBucket = collision_point(self.x, self.y, oBucket, false, true);
 
 if (overlapVase && !global.vase.filled)
 {

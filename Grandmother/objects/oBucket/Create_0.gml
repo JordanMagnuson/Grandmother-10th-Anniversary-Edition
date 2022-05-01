@@ -1,4 +1,7 @@
+sndEnterEmitter = audio_emitter_create();
 sndEnter = global.SND_BUCKET_ENTER;
+curSndEnter = noone;
+
 motionTween = noone; //oLinearNumberTween?
 
 bucketFront = noone; 
@@ -13,11 +16,16 @@ function Bucket(_x = 0, _y = 0){
 	self.bucketFront.BucketFront(global.BUCKET_FRONT);
 	
 	self.motionTween = instance_create_depth(0, 0, 0, oLinearMotion);
-	self.motionTween.LinearMotion(self.id);
+	self.motionTween.LinearMotion(self.id, false);
 }
 
 function added(){
-	audio_play_sound(snd_21065_bucket_enter,1,false);
+	self.curSndEnter = audio_play_sound_on(self.sndEnterEmitter, self.sndEnter, false, 1);
 	show_debug_message("bucket added()");
 	self.motionTween.setMotion(self.x, self.y, self.x, 340, 3 * room_speed, method(undefined, quadOut));
+}
+
+function drop() {
+	self.curSndEnter = audio_play_sound_on(self.sndEnterEmitter, self.sndEnter, false, 1);
+	self.motionTween.setMotion(self.x, self.y, self.x, room_height + 20, 3 * room_speed, method(undefined, quadIn));
 }

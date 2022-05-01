@@ -13,5 +13,5 @@ function fadeOut(duration){
 }
 
 function destroy(){
-	instance_destroy();
+	instance_destroy(self.id);
 }
