@@ -1,11 +1,11 @@
-isClean = false;
-self.depth = -500;
+//clean seems to be unused
+//clean = false;
+
 self.x = global.dust.x;
 self.y = global.dust.y;
 
-function Whiteboard(_source, _eraser) {
+function Whiteboard(_source) {
 	self.sprite_index = _source;
-	//Nothing to do with the eraser 
 }
 
 function erase(_px = 0, _py = 0, _spx = 0, _spy = 0, _alphaMultiplier = 1) {

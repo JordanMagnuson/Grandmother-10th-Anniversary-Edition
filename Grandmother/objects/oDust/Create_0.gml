@@ -15,7 +15,7 @@ function Dust(_x = 0, _y = 0) {
 	self.y = _y;
 	
 	self.whiteboard = instance_create_depth(0, 0, 0, oWhiteboard);
-	self.whiteboard.Whiteboard(global.DUST, global.SPONGE_MASK);
+	self.whiteboard.Whiteboard(global.DUST);
 	
 }
 
