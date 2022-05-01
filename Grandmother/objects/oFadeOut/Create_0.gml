@@ -15,12 +15,15 @@ function FadeOut(_goto, _color = global.BLACK, _duration = 3, _buffer = 0) {
 	//graphic set in Draw event
 	self.image_alpha = 0;
 	self.depth = -10000;
+	show_debug_message("ColorTween create");
 	self._alphaTween = instance_create_depth(0, 0, 0, oColorTween);
 	self._alphaTween.ColorTween(self.id, true, method(self.id, self.startBuffer));
 }
 
 function added() {
-	self._alphaTween.tween(self._duration, global.BLACK, self._color, 0, 1); 
+	show_debug_message("ColorTween start");
+	self._alphaTween.tween(self._duration, global.BLACK, self._color, 0, 1);
+	show_debug_message("ColorTween started");
 }
 
 function startBuffer() {

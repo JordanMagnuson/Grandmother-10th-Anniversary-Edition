@@ -1,4 +1,4 @@
-photoArray = [global.PHOTO_01, global.PHOTO_02, global.PHOTO_03, global.PHOTO_04, global.PHOTO_05, global.PHOTO_06, global.PHOTO_07, global.PHOTO_08, global.PHOTO_09, global.PHOTO_10, global.PHOTO_11, global.PHOTO_12, global.PHOTO_13, global.PHOTO_14, global.PHOTO_15, global.PHOTO_16];
+photoArray = [global.PHOTO_01, global.PHOTO_02, global.PHOTO_03, global.PHOTO_04, global.PHOTO_05, global.PHOTO_06, global.PHOTO_07, global.PHOTO_08, global.PHOTO_09, global.PHOTO_10, global.PHOTO_11, global.PHOTO_12, global.PHOTO_13, global.PHOTO_14, global.LEAVING_15, global.cleanHeadstone];
 soundArray = [noone, noone, noone, noone, noone, noone, noone, noone, noone, noone, noone, noone, noone, noone, noone, global.SND_DOOR_SQUEAK];
 photoController = noone;
 
