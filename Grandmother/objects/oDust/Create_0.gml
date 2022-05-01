@@ -1,6 +1,12 @@
 //Load in the color/alpha matrices for the dust pixels
 loadDustColors();
 
+for(var cy = 0; cy < array_length(global.dustAlpha); cy++) {
+	for(var cx = 0; cx < array_length(global.dustAlpha[cy]); cx++) {
+		global.dustAlpha[cy][cx] += 0.3;	
+	}
+}
+
 whiteboard = noone;
 cleaned = false;
 
