@@ -2,7 +2,7 @@ x = mouse_x;
 y = mouse_y;
 
 if (global.photoController.currentPhoto.clickMask){
-	var overlapClickMask = collision_circle(x, y, 2, oClickMask, 0, 1);
+	var overlapClickMask = collision_point(x, y, oClickMask, true, true);
 }
 
 if (global.photoController.currentPhoto.fadeInComplete){
@@ -21,5 +21,6 @@ else{
 	image_alpha = 0;}
 
 if (overlapClickMask && mouse_check_button_pressed(mb_left) &&	global.photoController.currentPhoto.fadeInComplete){
-	global.photoController.nextPhoto();}
+	global.photoController.nextPhoto();
+}
 	

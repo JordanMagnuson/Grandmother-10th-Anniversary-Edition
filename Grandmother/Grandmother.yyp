@@ -1,6 +1,5 @@
 {
   "resources": [
-    {"id":{"name":"oApproachController","path":"objects/oApproachController/oApproachController.yy",},"order":0,},
     {"id":{"name":"snd_50725_tiles_02","path":"sounds/snd_50725_tiles_02/snd_50725_tiles_02.yy",},"order":16,},
     {"id":{"name":"spr_hand_icon","path":"sprites/spr_hand_icon/spr_hand_icon.yy",},"order":22,},
     {"id":{"name":"spr_click_mask08","path":"sprites/spr_click_mask08/spr_click_mask08.yy",},"order":9,},
@@ -83,7 +82,7 @@
     {"id":{"name":"spr_photo12","path":"sprites/spr_photo12/spr_photo12.yy",},"order":42,},
     {"id":{"name":"spr_sponge_color","path":"sprites/spr_sponge_color/spr_sponge_color.yy",},"order":48,},
     {"id":{"name":"spr_bucket_front","path":"sprites/spr_bucket_front/spr_bucket_front.yy",},"order":1,},
-    {"id":{"name":"oApproach","path":"objects/oApproach/oApproach.yy",},"order":7,},
+    {"id":{"name":"oApproachController","path":"objects/oApproachController/oApproachController.yy",},"order":7,},
     {"id":{"name":"oDust","path":"objects/oDust/oDust.yy",},"order":15,},
     {"id":{"name":"spr_dust","path":"sprites/spr_dust/spr_dust.yy",},"order":19,},
     {"id":{"name":"oSponge","path":"objects/oSponge/oSponge.yy",},"order":17,},

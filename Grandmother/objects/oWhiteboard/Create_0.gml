@@ -10,6 +10,13 @@ function Whiteboard(_source) {
 
 function erase(_px = 0, _py = 0, _spx = 0, _spy = 0, _alphaMultiplier = 1) {
 	
+	if(_py >= array_length(global.dustAlpha)) {
+		_py = array_length(global.dustAlpha) - 1;
+	}
+	if(_px >= array_length(global.dustAlpha[0])) {
+		_px = array_length(global.dustAlpha[0])	- 1;
+	}
+	
 	var newAlpha = global.dustAlpha[_py][_px] - 0.25 * global.SPONGE_ALPHA[_spy][_spx] * _alphaMultiplier;
 	
 	global.dustAlpha[_py][_px] = newAlpha < 0 ? 0 : newAlpha;
