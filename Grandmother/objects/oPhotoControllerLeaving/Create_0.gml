@@ -1,6 +1,5 @@
-photoArray = array_create(0);
-soundArray = array_create(0);
-clickMaskArray = array_create(0);
+photoArray = noone;
+soundArray = noone;
 currentIndex = 0;
 myFinished = false;
 loop = false;
@@ -23,7 +22,7 @@ function PhotoControllerLeaving(_photoArray, _soundArray = noone, _waitTime = 1)
 }
 
 function added() {
-	self.alarm[0] = self.waitTime;
+	self.alarm[0] = self.waitTime * room_speed;
 	self.currentPhoto.added();
 	self.currentIndex++;
 }
@@ -53,5 +52,5 @@ function nextPhoto(_fadeIn = true) {
 	}
 	self.currentIndex++;
 	
-	self.alarm[0] = self.waitTime + global.PHOTO_FADE_IN_DURATION;
+	self.alarm[0] = (self.waitTime + global.PHOTO_FADE_IN_DURATION) * room_speed;
 }

@@ -13,8 +13,10 @@ fadeTween = noone; //oNumTween
 function PhotoBackdrop(_backdropSource = noone, _soundSource = noone, _fadeInDuration = 3, _fadeOutDuration = 3, _clickMaskSource = noone) {
 	//Assigned as sprite index later
 	//self.backdrop = _backdropSource;
-	if(noone != _clickMaskSource) self.clickMask = instance_create_depth(self.x, self.y, 100, oClickMask);
-	self.clickMask.ClickMask(0, 0, _clickMaskSource);
+	if(noone != _clickMaskSource) {
+		self.clickMask = instance_create_depth(self.x, self.y, 100, oClickMask);
+		self.clickMask.ClickMask(0, 0, _clickMaskSource);
+	}
 	if(noone != _soundSource) self.sound = _soundSource;
 	self.sprite_index = _backdropSource;
 	self.fadeInDuration = _fadeInDuration * room_speed;
