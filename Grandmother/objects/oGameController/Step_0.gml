@@ -1,6 +1,7 @@
 if(instance_exists(global.mouseController)) {
 	if(global.dust.cleaned && global.mouseController.lastPressCounter >= global.WAIT_TO_DROP_BUCKET && !global.bucketDropped) {
-		self.dropBucket();	
+		self.dropBucket();
+		global.sponge.image_alpha = 0;
 	}
 
 	if(global.bucketDropped && global.vase.filled && !global.endingStarted) {
