@@ -1,11 +1,3 @@
-function getRGB(_color) {
-	return (color_get_red(_color) << 16) | (color_get_green(_color) << 8) | (color_get_blue(_color));
-}
-
-function numColor(_num) {
-	return make_color_rgb((_num >> 16) & 0xFF, (_num >> 8) & 0xFF, _num & 0xFF);
-}
-
 function reverseArray(_arr) {
 	
 	var result = array_create(0);

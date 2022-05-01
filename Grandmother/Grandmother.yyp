@@ -25,6 +25,7 @@
     {"id":{"name":"oHeadstone","path":"objects/oHeadstone/oHeadstone.yy",},"order":17,},
     {"id":{"name":"spr_photo13","path":"sprites/spr_photo13/spr_photo13.yy",},"order":43,},
     {"id":{"name":"spr_photo05","path":"sprites/spr_photo05/spr_photo05.yy",},"order":35,},
+    {"id":{"name":"oBucketFront","path":"objects/oBucketFront/oBucketFront.yy",},"order":24,},
     {"id":{"name":"spr_cursor_icon","path":"sprites/spr_cursor_icon/spr_cursor_icon.yy",},"order":18,},
     {"id":{"name":"spr_click_mask02","path":"sprites/spr_click_mask02/spr_click_mask02.yy",},"order":3,},
     {"id":{"name":"oNumTween","path":"objects/oNumTween/oNumTween.yy",},"order":3,},
@@ -50,6 +51,7 @@
     {"id":{"name":"spr_photo01","path":"sprites/spr_photo01/spr_photo01.yy",},"order":31,},
     {"id":{"name":"snd_55690_walking_02","path":"sounds/snd_55690_walking_02/snd_55690_walking_02.yy",},"order":5,},
     {"id":{"name":"spr_click_mask14","path":"sprites/spr_click_mask14/spr_click_mask14.yy",},"order":15,},
+    {"id":{"name":"rmLeaving","path":"rooms/rmLeaving/rmLeaving.yy",},"order":3,},
     {"id":{"name":"snd_50725_tiles_04","path":"sounds/snd_50725_tiles_04/snd_50725_tiles_04.yy",},"order":1,},
     {"id":{"name":"oMatrix","path":"objects/oMatrix/oMatrix.yy",},"order":2,},
     {"id":{"name":"oVase","path":"objects/oVase/oVase.yy",},"order":15,},
@@ -72,6 +74,7 @@
     {"id":{"name":"snd_23448_door_squeak","path":"sounds/snd_23448_door_squeak/snd_23448_door_squeak.yy",},"order":11,},
     {"id":{"name":"spr_click_mask05","path":"sprites/spr_click_mask05/spr_click_mask05.yy",},"order":6,},
     {"id":{"name":"spr_click_mask11","path":"sprites/spr_click_mask11/spr_click_mask11.yy",},"order":12,},
+    {"id":{"name":"rmGameOver","path":"rooms/rmGameOver/rmGameOver.yy",},"order":2,},
     {"id":{"name":"oClickMask","path":"objects/oClickMask/oClickMask.yy",},"order":3,},
     {"id":{"name":"scr_Ease","path":"scripts/scr_Ease/scr_Ease.yy",},"order":3,},
     {"id":{"name":"spr_click_mask09","path":"sprites/spr_click_mask09/spr_click_mask09.yy",},"order":10,},
@@ -122,6 +125,8 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rmApproach","path":"rooms/rmApproach/rmApproach.yy",},},
     {"roomId":{"name":"rmGame","path":"rooms/rmGame/rmGame.yy",},},
+    {"roomId":{"name":"rmGameOver","path":"rooms/rmGameOver/rmGameOver.yy",},},
+    {"roomId":{"name":"rmLeaving","path":"rooms/rmLeaving/rmLeaving.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

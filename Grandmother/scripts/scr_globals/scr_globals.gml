@@ -28,5 +28,5 @@ function scr_globals(){
 	global.bucket = noone; //oBucket
 	global.vase = noone; //oVase
 	global.flowers = noone; //oFlowers
-	
+
 }

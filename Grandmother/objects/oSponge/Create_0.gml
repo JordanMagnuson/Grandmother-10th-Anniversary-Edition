@@ -21,8 +21,8 @@ saturation = 1;
 function Sponge(_x = 0, _y = 0) {
 	self.x = _x;
 	self.y = _y;
-	self.sprite_xoffset = sprite_get_width(self.sprite_index) / 2;
-	self.sprite_yoffset = sprite_get_height(self.sprite_index) / 2;
+	sprite_set_offset(self.sprite_index, sprite_get_width(self.sprite_index) / 2, sprite_get_height(self.sprite_index) / 2);
+	sprite_set_offset(self.spongeColorImage, sprite_get_width(self.sprite_index) / 2, sprite_get_height(self.sprite_index) / 2);
 	self.depth = -900;
 	self.image_alpha = 0;
 }
