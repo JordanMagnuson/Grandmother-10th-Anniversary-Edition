@@ -14,6 +14,7 @@ function PhotoController(_photoArray, _soundArray = noone, _clickMaskArray = noo
 	self.clickMaskArray = _clickMaskArray;
 	self.currentPhoto = instance_create_depth(self.x, self.y, self.depth, oPhotoBackdrop);
 	self.currentPhoto.PhotoBackdrop(_photoArray[self.currentIndex], _soundArray[self.currentIndex], global.PHOTO_FADE_IN_DURATION, global.PHOTO_FADE_OUT_DURATION, _clickMaskArray[self.currentIndex]);
+	self.currentPhoto.image_alpha = 0;
 }
 
 function added() {
