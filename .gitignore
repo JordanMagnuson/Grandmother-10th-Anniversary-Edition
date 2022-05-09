@@ -1,0 +1,13 @@
+# Ignore working directories.
+/working/
+/steam release/
+
+# Ignore build directory.
+/build/
+
+# Ignore Windows image file caches.
+Thumbs.db
+ehthumbs.db
+
+# Ignore Window folder config file.
+Desktop.ini
