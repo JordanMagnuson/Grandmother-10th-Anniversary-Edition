@@ -13,19 +13,19 @@ var overlapBucket = collision_point(self.x, self.y, oBucket, false, true);
 
 if (overlapVase && !global.vase.filled)
 {
-	global.sponge.image_alpha = 0;
+	oSponge.image_alpha = 0;
 	sprite_index = spr_hand_icon;
 	image_alpha = 1;
 }
 			
 else if (global.hasSponge)
 {
-	global.sponge.image_alpha = 1;
+	oSponge.image_alpha = 1;
 	image_alpha = 0;
 }
 else if (overlapBucket)
 {
-	global.sponge.image_alpha = 0;
+	oSponge.image_alpha = 0;
 	sprite_index = spr_hand_icon;
 	image_alpha = 1;				
 	if (mouse_check_button(mb_left) && !global.hasSponge)
@@ -35,7 +35,7 @@ else if (overlapBucket)
 }			
 else
 {
-	global.sponge.image_alpha = 0;
+	oSponge.image_alpha = 0;
 	sprite_index = spr_cursor_icon;
 	image_alpha = 1;				
 }
