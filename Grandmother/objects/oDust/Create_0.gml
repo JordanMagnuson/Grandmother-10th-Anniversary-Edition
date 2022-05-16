@@ -28,7 +28,7 @@ function clean(_px = 0, _py = 0, _spx = 0, _spy = 0) {
 }
 
 function checkCleaned() {
-	if(self.whiteboard.checkOpaquePixels(0.50) < 150) {
+	if(self.whiteboard.checkOpaquePixels(0.50) < 300) {
 		self.cleaned = true;
 	}
 }
