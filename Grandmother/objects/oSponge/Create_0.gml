@@ -1,6 +1,3 @@
-//Load global sponge alpha values per pixel
-loadSpongeAlpha();
-
 self.sprite_index = global.SPONGE;
 self.mask_index = global.SPONGE_MASK;
 spongeColorImage = global.SPONGE_COLOR;

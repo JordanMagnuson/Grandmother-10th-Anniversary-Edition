@@ -1,11 +1,4 @@
-//Load in the color/alpha matrices for the dust pixels
-loadDustColors();
-
-for(var cy = 0; cy < array_length(global.dustAlpha); cy++) {
-	for(var cx = 0; cx < array_length(global.dustAlpha[cy]); cx++) {
-		global.dustAlpha[cy][cx] += 0.3;	
-	}
-}
+scr_DustAlpha();
 
 whiteboard = noone;
 cleaned = false;
@@ -15,20 +8,25 @@ function Dust(_x = 0, _y = 0) {
 	self.y = _y;
 	
 	self.whiteboard = instance_create_depth(0, 0, 0, oWhiteboard);
-	self.whiteboard.Whiteboard(global.DUST);
+	self.whiteboard.Whiteboard(global.DUST, global.SPONGE_MASK);
 	
 }
 
 function added() {
-	self.alarm[0] = 1;	
+	self.alarm[0] = room_speed;	
 }
 
-function clean(_px = 0, _py = 0, _spx = 0, _spy = 0) {
-	self.whiteboard.erase(_px - self.x, _py - self.y, _spx, _spy, global.sponge.saturation);	
+function clean(_dx, _dy, _stop = false) {
+	self.whiteboard.erase(_dx - self.x, _dy - self.y, _stop);
 }
 
 function checkCleaned() {
-	if(self.whiteboard.checkOpaquePixels(0.50) < 300) {
+	var dirtyPixels = self.whiteboard.checkOpaquePixels(0.50)
+	if(dirtyPixels < 150) {
+		show_debug_message("Cleaned");
 		self.cleaned = true;
+	}
+	else {
+		show_debug_message(string(dirtyPixels) + " dirty");	
 	}
 }

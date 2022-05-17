@@ -32,7 +32,7 @@ function fadeOut(){
 function startLongEnding(){
 	//global.cleanHeadstone = FP.buffer;
 	//room_goto_next(); //Go to room Leaving. 
-	global.cleanHeadstone = sprite_create_from_surface(application_surface, 0, 0, surface_get_width(application_surface), surface_get_height(application_surface), false, false, 0, 0);
+	global.cleanHeadstone = sprite_create_from_surface(application_surface, 0, 0, browser_width, browser_height, false, false, 0, 0);
 	room_goto(rmLeaving);
 }
 		

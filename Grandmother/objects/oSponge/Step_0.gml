@@ -7,13 +7,10 @@ if(mouse_check_button(mb_left) && global.hasSponge) {
 	var collided = false;
 	
 	for(cy = self.y - self.sprite_yoffset; cy < self.y - self.sprite_yoffset + sprite_get_height(self.sprite_index); cy++) {
-		for(cx = self.x - sprite_xoffset; cx < self.x - self.sprite_xoffset + sprite_get_width(self.sprite_index); cx++) {
-			//show_debug_message("cx: " + string(cx) + " cy: " + string(cy));
-			if(collision_point(cx, cy, global.dust.whiteboard, false, true)) {
-				//show_debug_message("COLLIDED AT cx: " + string(cx) + " cy: " + string(cy));
+		for(cx = self.x - self.sprite_xoffset; cx < self.x - self.sprite_xoffset + sprite_get_width(self.sprite_index); cx++) {
+			if(collision_point(cx, cy, global.dust.whiteboard, true, true)) { 
 				collided = true;
-				global.dust.clean(cx, cy, cx - self.x + self.sprite_xoffset, cy - self.y + self.sprite_yoffset);
-				
+				global.dust.clean(cx, cy, false);	
 			}
 		}
 	}
@@ -24,10 +21,12 @@ if(mouse_check_button(mb_left) && global.hasSponge) {
 			self.curSndSponge01 = audio_play_sound_on(self.sndSponge01Emitter, self.sndSponge01, false, 1);	
 		}	
 	}
+	else {
+		global.dust.clean(0, 0, true);	
+	}
 }
 
 if(mouse_check_button_pressed(mb_left)) {
-	//self.saturation /= 1.05;
 	if(place_meeting(self.x, self.y, global.bucket)) {
 		self.saturation = 1;
 		if(global.hasSponge) {

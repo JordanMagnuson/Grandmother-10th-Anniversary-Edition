@@ -1,26 +1,39 @@
 //clean seems to be unused
 //clean = false;
 
+eraser = noone;
+erasing = false;
+eraserMultiplier = 1;
+
 self.x = global.dust.x;
 self.y = global.dust.y;
 
-function Whiteboard(_source) {
+
+
+function Whiteboard(_source, _eraser) {
 	self.sprite_index = _source;
+	self.eraser = _eraser;
 }
 
-function erase(_px = 0, _py = 0, _spx = 0, _spy = 0, _alphaMultiplier = 1) {
+function erase(_dx, _dy, _stop = false) {
 	
-	if(_py >= array_length(global.dustAlpha)) {
-		_py = array_length(global.dustAlpha) - 1;
+	var newAlpha;
+
+	self.erasing = !_stop;
+	
+	if(_dy >= array_length(global.dustAlpha)) {
+		_dy = array_length(global.dustAlpha) - 1;	
 	}
-	if(_px >= array_length(global.dustAlpha[0])) {
-		_px = array_length(global.dustAlpha[0])	- 1;
+	
+	if(_dx >= array_length(global.dustAlpha[0])) {
+		_dx = array_length(global.dustAlpha[0]) - 1;	
 	}
-	
-	var newAlpha = global.dustAlpha[_py][_px] - 0.25 * global.SPONGE_ALPHA[_spy][_spx] * _alphaMultiplier;
-	
-	global.dustAlpha[_py][_px] = newAlpha < 0 ? 0 : newAlpha;
-	
+
+	if(instance_exists(global.sponge) && self.erasing) {
+		newAlpha = global.dustAlpha[_dy][_dx] - global.sponge.saturation;
+		global.dustAlpha[_dy][_dx] -= newAlpha < 0 ? 0 : newAlpha;	
+	}
+
 }
 
 function checkOpaquePixels(_alphaThreshold = 0.25) {

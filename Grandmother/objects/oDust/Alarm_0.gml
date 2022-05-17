@@ -1,3 +1,3 @@
 /// @description checkCleaned
 self.checkCleaned();
-self.alarm[0] = 1;
+self.alarm[0] = room_speed;
