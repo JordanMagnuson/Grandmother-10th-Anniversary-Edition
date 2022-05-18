@@ -10,7 +10,7 @@
 		surface_reset_target();
 	}
 
-	if(mouse_check_button(mb_left) && self.erasing) {
+	if(mouse_check_button(mb_left)) {
 		surface_set_target(global.whiteboard);
 		draw_set_color(c_black);
 		draw_set_alpha(global.sponge.saturation * global.SPONGE_DAMPEN);

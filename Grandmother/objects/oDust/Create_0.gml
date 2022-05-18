@@ -17,7 +17,7 @@ function added() {
 }
 
 function clean(_dx, _dy, _stop = false) {
-	self.whiteboard.erase(_dx - self.x, _dy - self.y, _stop);
+	//self.whiteboard.erase(_dx - self.x, _dy - self.y, _stop);
 }
 
 function checkCleaned() {
