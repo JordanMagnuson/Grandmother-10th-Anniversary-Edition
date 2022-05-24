@@ -24,6 +24,8 @@ function PhotoControllerLeaving(_photoArray, _soundArray = noone, _waitTime = 1)
 function added() {
 	self.alarm[0] = self.waitTime * room_speed;
 	self.currentPhoto.added();
+	self.currentPhoto.image_xscale = room_width / sprite_get_width(self.currentPhoto.sprite_index);
+	self.currentPhoto.image_yscale = room_height / sprite_get_height(self.currentPhoto.sprite_index);
 	self.currentIndex++;
 }
 
