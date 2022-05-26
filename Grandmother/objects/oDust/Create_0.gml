@@ -22,7 +22,7 @@ function clean(_dx, _dy, _stop = false) {
 
 function checkCleaned() {
 	var dirtyPixels = self.whiteboard.checkOpaquePixels(0.50)
-	if(dirtyPixels < 150) {
+	if(dirtyPixels < 100) {
 		show_debug_message("Cleaned");
 		self.cleaned = true;
 	}
