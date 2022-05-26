@@ -1,5 +1,5 @@
-photoArray = [global.PHOTO_01, global.PHOTO_02, global.PHOTO_03, global.PHOTO_04, global.PHOTO_05, global.PHOTO_06, global.PHOTO_07, global.PHOTO_08, global.PHOTO_09, global.PHOTO_10, global.PHOTO_11, global.LEAVING_12, global.LEAVING_13, global.PHOTO_14, global.LEAVING_15, spr_headstone_cleaned];
-soundArray = [noone, noone, noone, noone, noone, noone, noone, noone, noone, noone, noone, noone, noone, noone, noone, global.SND_DOOR_SQUEAK];
+photoArray = [global.PHOTO_01, global.PHOTO_02, global.PHOTO_03, global.PHOTO_04, global.PHOTO_05, global.PHOTO_06, global.PHOTO_07, global.PHOTO_08, global.PHOTO_09, global.PHOTO_10, global.PHOTO_11, global.LEAVING_12, global.LEAVING_13, global.PHOTO_14, global.LEAVING_15];
+soundArray = [noone, noone, noone, noone, noone, noone, noone, noone, noone, noone, noone, noone, noone, noone, global.SND_DOOR_SQUEAK];
 photoController = noone;
 
 self.photoArray = reverseArray(self.photoArray);

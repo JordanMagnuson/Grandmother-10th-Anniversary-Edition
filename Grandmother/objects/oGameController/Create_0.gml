@@ -31,7 +31,7 @@ function fadeOut(){
 function startLongEnding(){
 	if(!global.startedFade) {
 		var tempFade = instance_create_depth(0, 0, 0, oFadeOut);
-		tempFade.FadeOut(rmLeaving, global.BLACK, 1);
+		tempFade.FadeOut(rmLeaving, global.BLACK, 2);
 		tempFade.added();
 		global.startedFade = true;
 	}
