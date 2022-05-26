@@ -21,7 +21,6 @@ function dropBucket(){
 
 function fadeOut(){
 	if (!global.startedFade){
-		//add(new FadeOut(GameOver, Colors.BLACK, Global.FADE_OUT_DURATION));
 		var tempFade = instance_create_depth(0, 0, 0, oFadeOut);
 		tempFade.FadeOut(rmGameOver, global.BLACK, global.FADE_OUT_DURATION);
 		tempFade.added();
@@ -30,20 +29,11 @@ function fadeOut(){
 }
 
 function startLongEnding(){
-	//global.cleanHeadstone = FP.buffer;
-	//room_goto_next(); //Go to room Leaving.
-	//var activeCam = camera_get_active();
-	var activeCam, xScaleRatio, yScaleRatio, xInit, yInit, width, height;
-	activeCam = instance_find(oCamera, 0);
-	xScaleRatio = view_wport[activeCam.target_view] / activeCam.view_width;
-	yScaleRatio = view_hport[activeCam.target_view] / activeCam.view_height;
-	xInit = round(-activeCam.x * xScaleRatio);
-	yInit = round(-activeCam.y * yScaleRatio);
-	width = round(room_width * xScaleRatio);
-	height = round(room_height * yScaleRatio);
-	show_debug_message("x scale: " + string(xScaleRatio) + ", y scale: " + string(yScaleRatio));
-	show_debug_message("initial x: " + string(xInit) + ", initial y: " + string(yInit) + ", surface width: " + string(width) + ", surface height: " + string(height));
-	global.cleanHeadstone = sprite_create_from_surface(application_surface, xInit, yInit, width, height, false, false, 0, 0);
-	room_goto(rmLeaving);
+	if(!global.startedFade) {
+		var tempFade = instance_create_depth(0, 0, 0, oFadeOut);
+		tempFade.FadeOut(rmLeaving, global.BLACK, 1);
+		tempFade.added();
+		global.startedFade = true;
+	}
 }
 		

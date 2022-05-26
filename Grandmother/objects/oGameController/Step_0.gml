@@ -9,7 +9,7 @@ if(instance_exists(global.mouseController)) {
 		global.mouseController.destroy();
 		var endFade = instance_create_depth(0, 0, 0, oTween);
 		if(global.LONG_ENDING) {
-			endFade.Tween(global.WAIT_TO_FADE * room_speed, true, method(self.id, startLongEnding));
+			endFade.Tween((global.WAIT_TO_FADE - 1) * room_speed, true, method(self.id, startLongEnding));
 		}
 		else {
 			endFade.Tween(global.WAIT_TO_FADE * room_speed, true, method(self.id, fadeOut));	
