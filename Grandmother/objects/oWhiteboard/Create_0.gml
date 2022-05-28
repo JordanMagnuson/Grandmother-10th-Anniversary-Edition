@@ -1,8 +1,8 @@
 //clean seems to be unused
 //clean = false;
 eraser = noone;
-erasing = false;
-eraserMultiplier = 1;
+//erasing = false;
+//eraserMultiplier = 1;
 
 self.x = global.dust.x;
 self.y = global.dust.y;
@@ -14,6 +14,7 @@ function Whiteboard(_source, _eraser) {
 	self.eraser = _eraser;
 }
 
+/*
 function erase(_dx, _dy, _stop = false) {
 	
 	var newAlpha;
@@ -34,7 +35,9 @@ function erase(_dx, _dy, _stop = false) {
 	}
 
 }
+*/
 
+/*
 // LEGACY FUNCTION FOR OLD METHOD: NO LONGER USED.
 function checkOpaquePixelsOld(_alphaThreshold = 0.25) {
 	
@@ -53,6 +56,7 @@ function checkOpaquePixelsOld(_alphaThreshold = 0.25) {
 	return result;
 	
 }
+*/
 
 // See https://www.reddit.com/r/gamemaker/comments/60qj6u/extracting_color_values_from_images/
 function checkOpaquePixels(_alphaThreshold = 0.25) {

@@ -1,9 +1,3 @@
-//Seems to just be the hitbox
-//pixelMask = noone; //Pixelmask
-
-//objType needed?
-
-
 function ClickMask(_x = 0, _y = 0, _source = noone) {
 	
 	self.sprite_index = _source;

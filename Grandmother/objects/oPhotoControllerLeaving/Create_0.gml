@@ -15,7 +15,7 @@ function PhotoControllerLeaving(_photoArray, _soundArray = noone, _waitTime = 1)
 	self.soundArray = _soundArray;
 
 	self.currentPhoto = instance_create_depth(self.x, self.y, self.depth, oPhotoBackdrop);
-	self.currentPhoto.PhotoBackdrop(_photoArray[self.currentIndex], _soundArray[self.currentIndex], 1, global.PHOTO_FADE_OUT_DURATION);
+	self.currentPhoto.PhotoBackdrop(_photoArray[self.currentIndex], _soundArray[self.currentIndex], 0, global.PHOTO_FADE_OUT_DURATION);
 
 	self.waitTime = _waitTime;
 	
