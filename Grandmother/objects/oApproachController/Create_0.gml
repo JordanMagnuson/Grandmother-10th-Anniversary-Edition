@@ -13,5 +13,6 @@ clickMaskArray = [global.CLICK_MASK_01, global.CLICK_MASK_02, global.CLICK_MASK_
 global.photoController = instance_create_depth(0, 0, 0, oPhotoController);
 global.photoController.PhotoController(self.photoArray, self.soundArray, self.clickMaskArray);
 global.photoController.added();
-audio_play_sound(global.SndAmbient, 1, true);
 global.mouseController = instance_create_depth(0, 0, 0, oMouseControllerApproach);
+
+global.ambient_sounds_playing = false;
