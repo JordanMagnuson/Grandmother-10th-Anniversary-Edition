@@ -37,8 +37,8 @@ else {
 	// For touch devices, allow clicking anywhere on the screen to advance.
 	// We use released here instead of "pressed" because it seems to register slightly better for touch devices.
 	// Note that it still doesn't work great on all Android devices. Better to use gesture tap events, but
-	// these don't register in HTML5. 
-	if (device_mouse_check_button_released(0, mb_any)) {
+	// these don't register in HTML5. s
+	if (device_mouse_check_button_released(0, mb_left) && global.photoController.currentPhoto.fadeInComplete) {
 		global.photoController.nextPhoto();
 	}
 }

@@ -12,6 +12,8 @@
 THING_NAME = "Notgame/Game Poem";
 
 // Is this a touch device?
+// Note that newer iPads are unfortunately hard to detect as ios, as they tend to return os type os_macosx.
+// Might be able to do it with os_get_info().
 global.is_touch_device = false;
 switch (os_type) {
 	case os_ios:
@@ -21,11 +23,9 @@ switch (os_type) {
 		global.is_touch_device = true;
 		break;
 }
-// Some iPads will not return os_type os_ios, but will register as 'device_ios_unknown'.
 switch (os_device) {
 	case device_ios_ipad:
 	case device_ios_ipad_retina:
-	case device_ios_unknown:
 		global.is_touch_device = true;
 		break;	
 }
