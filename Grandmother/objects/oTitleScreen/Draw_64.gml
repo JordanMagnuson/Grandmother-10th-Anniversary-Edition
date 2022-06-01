@@ -45,7 +45,7 @@ draw_text_transformed(xx, yy, byline, h3_size * global.gui_scale, h3_size * glob
 
 // By line 2
 yy += 24*global.gui_scale;
-var byline2 = "Saigon, 2011";
+var byline2 = "Nha Trang, 2011";
 draw_text_transformed(xx, yy, byline2, h3_size * global.gui_scale, h3_size * global.gui_scale, 0);
 
 // Instructions
