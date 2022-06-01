@@ -1,3 +1,7 @@
+if (global.is_touch_device) {
+	visible = false;
+}
+
 alphaTween = noone;
 lastPressCounter = 0;
 self.depth = -1000;

@@ -12,14 +12,22 @@
 THING_NAME = "Notgame/Game Poem";
 
 // Is this a touch device?
+global.is_touch_device = false;
 switch (os_type) {
 	case os_ios:
 	case os_android:
+	case os_winphone:
+	case device_ios_ipad:
 		global.is_touch_device = true;
 		break;
-	default:
-		global.is_touch_device = false;
-		break;
+}
+// Some iPads will not return os_type os_ios, but will register as 'device_ios_unknown'.
+switch (os_device) {
+	case device_ios_ipad:
+	case device_ios_ipad_retina:
+	case device_ios_unknown:
+		global.is_touch_device = true;
+		break;	
 }
 
 function resize_title_screen() {
