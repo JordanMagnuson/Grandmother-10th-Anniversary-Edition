@@ -13,6 +13,7 @@
     {"id":{"name":"snd_50725_tiles_05","path":"sounds/snd_50725_tiles_05/snd_50725_tiles_05.yy",},"order":2,},
     {"id":{"name":"snd_55690_walking_06","path":"sounds/snd_55690_walking_06/snd_55690_walking_06.yy",},"order":9,},
     {"id":{"name":"spr_click_to_continue","path":"sprites/spr_click_to_continue/spr_click_to_continue.yy",},"order":17,},
+    {"id":{"name":"ImageLoadBar","path":"extensions/ImageLoadBar/ImageLoadBar.yy",},"order":1,},
     {"id":{"name":"spr_sponge","path":"sprites/spr_sponge/spr_sponge.yy",},"order":47,},
     {"id":{"name":"oPhotoController","path":"objects/oPhotoController/oPhotoController.yy",},"order":4,},
     {"id":{"name":"oLeavingController","path":"objects/oLeavingController/oLeavingController.yy",},"order":25,},
@@ -157,7 +158,9 @@
   "TextureGroups": [
     {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"desktop.ini","resourceType":"GMIncludedFile",},
+  ],
   "MetaData": {
     "IDEVersion": "2022.1.1.610",
   },
