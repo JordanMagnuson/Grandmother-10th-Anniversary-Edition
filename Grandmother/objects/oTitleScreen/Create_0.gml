@@ -19,13 +19,18 @@ switch (os_type) {
 	case os_ios:
 	case os_android:
 	case os_winphone:
-	case device_ios_ipad:
 		global.is_touch_device = true;
 		break;
 }
 switch (os_device) {
 	case device_ios_ipad:
 	case device_ios_ipad_retina:
+		global.is_touch_device = true;
+		break;	
+}
+switch (os_browser) {
+	case browser_ie_mobile:
+	case browser_safari_mobile:
 		global.is_touch_device = true;
 		break;	
 }
